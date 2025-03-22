@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vestertd:evil_ash"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "vestertd:evil_essence"
+  }
+}

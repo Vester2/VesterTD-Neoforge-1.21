@@ -21,11 +21,11 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> EVIl_ASH = registerBlock("evil_ash",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.SOUL_SAND)));
+                    .strength(2f).sound(SoundType.SOUL_SAND)));
 
     public static final DeferredBlock<Block> REFINED_EVIL = registerBlock("refined_evil",
-            () -> new DropExperienceBlock(UniformInt.of(2, 4),
-                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
